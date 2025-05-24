@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBD Saw Kyi Tha Khaing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="outside">
+        <h1>Happy Birthday</h1>
+        <p> HBD my dearest Saw Kyi!! May all your desires come into your life
+          as fast as possible🫶🏻 and may you buy me snacks and stuffs even more.💃🏼
+          By Chaw✨
+        </p>
+      </div>
+
+      <div class="inside">
+        <img src="gitt.gif">
+        <h3> lol🫶🍨</h3>
+      </div>
+    </div>
+
+    <div class="sticker">
+      <img src="Birthday-cake_gif (500×492).gif" class="two">"
+      
+    </div>
+
+    <div class="sticker2"> 
+      <div class="sar">
+      <p>Blow it and let's wish!</p>
+    </div>
+
+      <img src="download (2).gif">
+    </div>
+  </div>
+
+  <!-- <div class="arrow">
+    <img src="arrow.gif">
+
+  </div> -->
+
+  <div class="heart">
+    <img src="heart.gif">
+  </div>
+
+  <div class="star">
+    <img src="star.gif">
+  </div>
+<div class="star2">
+    <img src="star.gif">
+  </div>
+<div class="pink">
+    <img src="Pink Circle Sticker by bvaras_es - Find & Share on GIPHY.gif">
+  </div>
+
+  <!-- <div class="dance">
+    <img src="Studio Ghibli Dancing Sticker - Find & Share on GIPHY.gif">
+  </div> -->
+
+  
+
+   
+    <div class="music">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <div class="circle">
+        <i class="fa-solid fa-bars"></i>
+        </div>
+        
+      </nav>
+
+      <img src="jake.png" class="song">
+      <h1>Happy Birthday</h1>
+      <p>from Jake</p>
+
+      <audio controls: hidden id="song">
+        <source src="Happy Birthday (Piano Version) - Helmut Schenker.m4a" type="audio/mpeg">  
+      </audio>
+
+      <input type="range" value="0", id="progress">
+
+      <div class="controls">
+        <div> <i class="fa-solid fa-backward"></i> </div>
+        <div onclcik="click()"> <i class="fa-solid fa-pause" id="ctrlIcon"></i> </div>
+        <div> <i class="fa-solid fa-forward"></i> </div>
+      </div>
+    </div>
+
+
+    <script>
+      let progress = document.getElementById ("progress");
+      let song = document.getElementById ("song");
+      let ctrlIcon = document.getElementById ("ctrlIcon");
+
+      song.onloadeddata = function(){
+        progress.max =song.duration;
+        progress.value =song.currentTime;
+
+      }
+
+      function click(){
+        if(ctrlIcon.classList.contains("fa-solid fa-pause")){
+          song.pause();
+          ctrlIcon.classList.remove("fa-solid fa-pause");
+          ctrlIcon.classList.add("fa-solid fa-play")
+        }
+        else{
+
+          song.play();
+          ctrlIcon.classList.add("fa-pause");
+          ctrlIcon.classList.remove("fa-play")
+
+      
+        }
+      }
+
+      if (song.play()){
+        setInterval (()=>{
+          progress.value =song.currentTime;
+        }, 500)
+      }
+      progress.onchange = function(){
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+          ctrlIcon.classList.remove("fa-play")
+      }
+    </script>
+
+   
+    <div class="block">
+      <div class="frames frame1">
+        <img src="s11.png" class="pic">
+        <p>Live as the way you are🌿</p>
+      </div>
+       <div class="frames frame2">
+        <img src="s2.png"  class="pic">
+        <p>You are your own queen!</p>
+       </div>
+        <div class="frames frame3">
+          <img src="s3.png"  class="pic">
+        <p>When you have tough time, remeber I will there for you💘.</p>
+        </div>
+
+
+    </div>
+  </div>
+  
+</body>
+</html>
